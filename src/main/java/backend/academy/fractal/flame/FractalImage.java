@@ -1,7 +1,7 @@
 package backend.academy.fractal.flame;
 
-import lombok.Getter;
 import java.awt.image.BufferedImage;
+import lombok.Getter;
 
 @Getter
 public class FractalImage {
@@ -29,7 +29,9 @@ public class FractalImage {
     }
 
     public Pixel getPixel(int x, int y) {
-        if (!contains(x, y)) return null;
+        if (!contains(x, y)) {
+            return null;
+        }
         return data[y][x];
     }
 

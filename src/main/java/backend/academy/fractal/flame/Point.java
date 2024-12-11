@@ -1,11 +1,4 @@
 package backend.academy.fractal.flame;
 
-public class Point {
-    public final double x;
-    public final double y;
-
-    public Point(double x, double y) {
-        this.x = x;
-        this.y = y;
-    }
+public record Point(double x, double y) {
 }
